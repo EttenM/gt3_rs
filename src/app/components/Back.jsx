@@ -79,8 +79,8 @@ const Back = () => {
   });
   return (
     <div className="section_5 w-full h-screen relative flex justify-center items-start">
-      <div className="w-[90%] md:w-[60%] lg:w-[40%] flex flex-col gap-[50px] justify-center items-center mt-[25vh] lg:mt-[15vh]">
-        <p className="width_text opacity-0 text-[2.5rem] md:text-[54px] font-semibold font-Oswald text-main-color">
+      <div className="w-[80%] xs:w-[50%] md:w-[70%] 2xl:w-[40%] flex flex-col gap-[50px] justify-center items-center mt-[25vh] lg:mt-[15vh]">
+        <p className="width_text opacity-0 text-[2.5rem] md:text-[54px] font-semibold font-Oswald text-main-color text-nowrap">
           Width 1.900 mm
         </p>
         <div className="width_line w-[100%] border-b-[5px] h-[5px] border-dashed border-main-color "></div>

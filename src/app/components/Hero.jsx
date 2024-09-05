@@ -11,7 +11,7 @@ const Hero = () => {
     tl.fromTo(
       ".circle",
       { top: "10%" },
-      { top: "47%", duration: 1, ease: "power1.out" }
+      { top: "45%", duration: 1, ease: "power1.out" }
     );
     ScrollTrigger.create({
       trigger: ".section_1",

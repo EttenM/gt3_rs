@@ -22,18 +22,12 @@ const Preloader = ({ setPreload, perloadState }) => {
         tlLoader.set("html", { overflow: "hidden" });
         tlLoader.to(".line", {
           width: perloadState + "%",
+
           duration: 1.5,
-          // ease: "expo.out",
-          // ease: "power4.inOut",
+
           ease: "circ.inOut",
         });
-        // if (perloadState > 40) {
-        //   tlLoader.to(".line", {
-        //     width: perloadState + "%",
-        //     duration: 1.5,
-        //     ease: "circ.inOut",
-        //   });
-        // }
+
         if (perloadState === 100) {
           tlLoader
             .to(".preloader_content", {
@@ -63,7 +57,9 @@ const Preloader = ({ setPreload, perloadState }) => {
         <Speed name={"w-[70%] h-auto"} />
 
         <div className="relative w-full h-[5px] bg-gray-600 rounded-[20px] overflow-hidden">
-          <div className={`line w-0 h-full bg-main-color rounded-[20px]`}></div>
+          <div
+            className={`line w-0 h-full bg-main-color rounded-[20px] relative overflow-hidden`}
+          ></div>
         </div>
       </div>
     </div>
