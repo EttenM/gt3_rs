@@ -55,7 +55,7 @@ const Hero = () => {
       <div className="title w-[90%] lg:w-fit absolute top-[20%] translate-y-[-20%] lg:top-[50%] lg:translate-y-[-50%] left-[50%] translate-x-[-50%] lg:left-[20%] lg:translate-x-[-20%]  flex flex-col items-center ">
         {/* <p className=" text-[64px] font-bold font-Oswald">GT3 RS</p> */}
         <Speed name={"z-[-2] w-[40%] lg:w-[20vw] h-auto"} />
-        <h1 className=" pointer-events-none text-[calc((1vh+1vw)*5)] font-bold font-Oswald">
+        <h1 className=" pointer-events-none text-[calc((1vh+1vw)*5)] font-bold font-Oswald text-white">
           GT3 RS
         </h1>
       </div>

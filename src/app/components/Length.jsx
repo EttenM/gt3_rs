@@ -6,33 +6,68 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Length = () => {
   useGSAP(() => {
-    ScrollTrigger.create({
-      trigger: ".section_6",
-      start: "+=40% center",
-      end: "bottom +=90%",
-      onEnter: () => animateIn(),
-      onLeave: () => resetAnimation(),
-      onEnterBack: () => animateIn(),
-      onLeaveBack: () => resetAnimation(),
-      // animation: tl,
-      toggleActions: "play none none none",
-    });
     gsap.set(".length_line", {
       scaleY: 0,
     });
-
-    function animateIn() {
-      gsap.to(".length_line", {
-        scaleY: 1,
-        duration: 0.25,
-        ease: "power1.Out",
-      });
-      gsap.to(".length_text", {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section_6",
+        start: "center center",
+        end: "+=1000px",
+        scrub: true,
+        pin: true,
+        pinSpacing: true,
+        // toggleActions: "play reverse play reverse",
+      },
+    });
+    tl.to(".length_line", {
+      scaleY: 1,
+      duration: 0.25,
+      ease: "power1.Out",
+    })
+      .to(".length_text", {
         opacity: 1,
         duration: 0.25,
         ease: "power1.Out",
+      })
+      .to(".length_line", {
+        scaleY: 0,
+        duration: 0.25,
+        ease: "power1.Out",
+      })
+      .to(".length_text", {
+        opacity: 0,
+        duration: 0.25,
+        ease: "power1.Out",
       });
-    }
+
+    // ScrollTrigger.create({
+    //   trigger: ".section_6",
+    //   start: "+=40% center",
+    //   end: "bottom +=90%",
+    //   onEnter: () => animateIn(),
+    //   onLeave: () => resetAnimation(),
+    //   onEnterBack: () => animateIn(),
+    //   onLeaveBack: () => resetAnimation(),
+    //   // animation: tl,
+    //   toggleActions: "play none none none",
+    // });
+    // gsap.set(".length_line", {
+    //   scaleY: 0,
+    // });
+
+    // function animateIn() {
+    //   gsap.to(".length_line", {
+    //     scaleY: 1,
+    //     duration: 0.25,
+    //     ease: "power1.Out",
+    //   });
+    //   gsap.to(".length_text", {
+    //     opacity: 1,
+    //     duration: 0.25,
+    //     ease: "power1.Out",
+    //   });
+    // }
     function resetAnimation() {
       gsap.to(".length_line", {
         scaleY: 0,

@@ -21,20 +21,19 @@ const Preloader = ({ setPreload, perloadState }) => {
 
         tlLoader.set("html", { overflow: "hidden" });
         tlLoader.to(".line", {
-          delay: 0.5,
-          width: "40%",
+          width: perloadState + "%",
           duration: 1.5,
           // ease: "expo.out",
           // ease: "power4.inOut",
           ease: "circ.inOut",
         });
-        if (perloadState >= 40) {
-          tlLoader.to(".line", {
-            width: perloadState + "%",
-            duration: 1.5,
-            ease: "circ.inOut",
-          });
-        }
+        // if (perloadState > 40) {
+        //   tlLoader.to(".line", {
+        //     width: perloadState + "%",
+        //     duration: 1.5,
+        //     ease: "circ.inOut",
+        //   });
+        // }
         if (perloadState === 100) {
           tlLoader
             .to(".preloader_content", {

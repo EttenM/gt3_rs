@@ -5,7 +5,26 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Brakes = () => {
-  // useGSAP(() => {
+  useGSAP(() => {
+    gsap.set(".brakes", {
+      xPercent: 120,
+    });
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section_7",
+        start: "center center",
+        end: "+=1000px",
+        scrub: true,
+        pin: true,
+        pinSpacing: true,
+        // toggleActions: "play reverse play reverse",
+      },
+    });
+    tl.to(".brakes", {
+      xPercent: 0,
+      duration: 0.5,
+    });
+  });
   //   ScrollTrigger.create({
   //     trigger: ".section_8",
   //     start: "+=45% center",

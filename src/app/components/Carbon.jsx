@@ -6,39 +6,54 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Carbon = () => {
   useGSAP(() => {
-    ScrollTrigger.create({
-      trigger: ".section_4",
-      start: "+=30% center",
-      end: "bottom +=80%",
-      onEnter: () => animateIn(),
-      onLeave: () => resetAnimation(),
-      onEnterBack: () => animateIn(),
-      onLeaveBack: () => resetAnimation(),
-      // animation: tl,
-      toggleActions: "play none none none",
-    });
     gsap.set(".carbon", {
-      xPercent: -150,
+      xPercent: -120,
     });
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section_4",
+        start: "center center",
+        end: "+=1000px",
+        scrub: true,
+        pin: true,
+        pinSpacing: true,
+        // toggleActions: "play reverse play reverse",
+      },
+    });
+    tl.to(".carbon", {
+      xPercent: 0,
+      duration: 0.5,
+    });
+    // ScrollTrigger.create({
+    //   trigger: ".section_4",
+    //   start: "+=30% center",
+    //   end: "bottom +=80%",
+    //   onEnter: () => animateIn(),
+    //   onLeave: () => resetAnimation(),
+    //   onEnterBack: () => animateIn(),
+    //   onLeaveBack: () => resetAnimation(),
+    //   // animation: tl,
+    //   toggleActions: "play none none none",
+    // });
 
-    function animateIn() {
-      gsap.to(".carbon", {
-        xPercent: 0,
-        duration: 0.5,
-        ease: "power1.Out",
-      });
-    }
-    function resetAnimation() {
-      gsap.to(".carbon", {
-        xPercent: -150,
-        duration: 0.5,
-      });
-    }
+    // function animateIn() {
+    //   gsap.to(".carbon", {
+    //     xPercent: 0,
+    //     duration: 0.5,
+    //     ease: "power1.Out",
+    //   });
+    // }
+    // function resetAnimation() {
+    //   gsap.to(".carbon", {
+    //     xPercent: -150,
+    //     duration: 0.5,
+    //   });
+    // }
   });
   return (
     <div className="section_4 w-full h-screen relative flex justify-center lg:justify-start items-start">
       <div
-        className="carbon w-fit max-w-[95%] lg:max-w-[45%] 2xl:max-w-[35%] p-[15px] lg:p-[40px] rounded-[30px] bg-main-color text-[1rem] md:text-[24px] font-medium  text-black 
+        className="carbon w-fit max-w-[95%] lg:max-w-[45%]  p-[15px] lg:p-[40px] rounded-[30px] bg-main-color text-[1rem] md:text-[24px] font-medium  text-black 
       lg:ml-[5vh] mt-[5vh] flex flex-col "
       >
         <h3 className="text-[1.5rem] md:text-[54px] font-semibold font-Oswald">

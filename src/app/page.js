@@ -122,9 +122,8 @@ const Scene = ({ perloadOver }) => {
               scrollTrigger: {
                 trigger: ".section_2",
                 start: "top bottom",
-                end: "center center",
+                end: "bottom bottom",
                 scrub: true,
-                invalidateOnRefresh: true,
 
                 snap: 1,
               },
@@ -153,9 +152,8 @@ const Scene = ({ perloadOver }) => {
             scrollTrigger: {
               trigger: ".section_3",
               start: "top bottom",
-              end: "center center",
+              end: "bottom bottom",
               scrub: true,
-              invalidateOnRefresh: true,
 
               snap: 1,
             },
@@ -175,7 +173,7 @@ const Scene = ({ perloadOver }) => {
                 start: "top bottom",
                 end: "bottom bottom",
                 scrub: true,
-                invalidateOnRefresh: true,
+
                 snap: 1,
               },
             },
@@ -196,7 +194,7 @@ const Scene = ({ perloadOver }) => {
                 start: "top bottom",
                 end: "bottom bottom",
                 scrub: true,
-                invalidateOnRefresh: true,
+
                 snap: 1,
                 delay: 0, // wait 0.2 seconds from the last scroll event before doing the snapping
                 ease: "power1.inOut",
@@ -215,7 +213,7 @@ const Scene = ({ perloadOver }) => {
                 start: "top bottom",
                 end: "bottom bottom",
                 scrub: true,
-                invalidateOnRefresh: true,
+
                 snap: 1,
                 delay: 0,
                 ease: "power1.inOut",
@@ -243,7 +241,7 @@ const Scene = ({ perloadOver }) => {
               start: "top bottom",
               end: "bottom bottom",
               scrub: true,
-              invalidateOnRefresh: true,
+
               snap: 1,
               delay: 0,
               ease: "power1.inOut",
@@ -273,7 +271,7 @@ const Scene = ({ perloadOver }) => {
               start: "top bottom",
               end: "bottom bottom",
               scrub: true,
-              invalidateOnRefresh: true,
+
               snap: 1,
               delay: 0,
               ease: "power1.inOut",
