@@ -43,12 +43,12 @@ export default function Home() {
       lenis?.start();
     }
   }, [lenis, perloadOver]);
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      ScrollTrigger.refresh({ safe: true });
-      window.scrollTo(0, 0);
-    });
-  });
+  // useEffect(() => {
+  //   window.addEventListener("resize", () => {
+  //     ScrollTrigger.refresh({ safe: true });
+  //     window.scrollTo(0, 0);
+  //   });
+  // });
 
   const [perloadState, setperloadState] = useState(0);
   const lenisOptions = {
