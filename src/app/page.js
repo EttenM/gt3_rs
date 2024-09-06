@@ -43,14 +43,10 @@ export default function Home() {
       lenis?.start();
     }
   }, [lenis, perloadOver]);
-  let resizeTimer;
   useEffect(() => {
-    window.scrollTo(0, 0);
     window.addEventListener("resize", () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        window.location.reload();
-      }, 150);
+      ScrollTrigger.refresh({ safe: true });
+      window.scrollTo(0, 0);
     });
   });
 
