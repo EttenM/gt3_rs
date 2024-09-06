@@ -78,14 +78,14 @@ const Performance = () => {
   });
   return (
     <div
-      className="section_2 w-full h-screen relative flex items-start lg:items-center overflow-hidden"
+      className="section_2 w-full h-screen relative flex items-start md:items-center overflow-hidden"
       ref={section}
     >
-      <div className="text-bg w-full lg:w-[45%] h-[40%] lg:h-[90%] rounded-tr-[500px] rounded-br-[500px] bg-main-color flex justify-center items-start  flex-col gap-[20px] pl-[1.5vw]">
-        <h3 className="perf_title text-black text-[1.5rem] sm:text-[54px] w-[80%] font-semibold font-Oswald opacity-0">
+      <div className="text-bg w-full md:w-[45%] h-[40%] md:h-[90%] rounded-tr-[500px] rounded-br-[500px] bg-main-color flex justify-center items-start  flex-col gap-[20px] pl-[1.5vw]">
+        <h3 className="perf_title text-black text-[1.5rem] sm:text-[2.5vw] lg:text-[54px] w-[80%] font-semibold font-Oswald opacity-0">
           Maximum performance
         </h3>
-        <p className="perf_text text-black text-[1rem] sm:text-[24px] w-[80%] font-medium opacity-0">
+        <p className="perf_text text-black text-[1rem] lg:text-[24px] w-[80%] font-medium opacity-0">
           The new 911 GT3 RS delivers unbelievable performance of up to 465 Nm
           on the circuit. 386 kW (525 PS) catapult you from 0-100 km/h in 3.2
           seconds, with no time to breathe until reaching a top speed of 296

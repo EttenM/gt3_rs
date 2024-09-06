@@ -51,12 +51,12 @@ const Carbon = () => {
     // }
   });
   return (
-    <div className="section_4 w-full h-screen relative flex justify-center lg:justify-start items-start">
+    <div className="section_4 w-full h-screen relative flex justify-center md:justify-start items-start">
       <div
-        className="carbon w-fit max-w-[95%] lg:max-w-[45%]  p-[15px] lg:p-[40px] rounded-[30px] bg-main-color text-[1rem] md:text-[24px] font-medium  text-black 
-      lg:ml-[5vh] mt-[5vh] flex flex-col "
+        className="carbon w-fit max-w-[95%] md:max-w-[45%]  p-[15px] lg:p-[40px] rounded-[30px] bg-main-color text-[1rem] lg:text-[24px] font-medium  text-black 
+      md:ml-[5vh] mt-[5vh] flex flex-col "
       >
-        <h3 className="text-[1.5rem] md:text-[54px] font-semibold font-Oswald">
+        <h3 className="text-[1.5rem] lg:text-[54px] font-semibold font-Oswald">
           Carbon
         </h3>
         <p>

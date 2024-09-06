@@ -83,10 +83,10 @@ const Length = () => {
   });
   return (
     <div className="section_6 w-full h-screen relative flex justify-start md:justify-end items-center">
-      <div className="w-full md:w-fit h-[90%] flex gap-[5vw] md:gap-[50px] justify-center items-center ml-[15px] md:ml-0 md:mr-[5vw] lg:mr-[15vw] 2xl:mr-[20vw]">
+      <div className="w-full md:w-fit h-[90%] flex xs:gap-[5vw]  md:gap-[50px] justify-center items-center ml-[15px] xs:ml-[10vw] md:ml-0 md:mr-[5vw] lg:mr-[15vw] 2xl:mr-[20vw]">
         <div className="length_line w-[5px] border-l-[5px] h-[80%] md:h-[100%] border-dashed border-main-color"></div>
 
-        <p className="length_text opacity-0 text-[2.5rem] md:text-[54px] font-semibold font-Oswald text-main-color text-nowrap self-start md:self-auto  md:mt-0">
+        <p className="w-full length_text opacity-0 text-[2.5rem] lg:text-[54px] font-semibold font-Oswald text-main-color text-nowrap self-start sm:self-auto  md:mt-0 text-center xs:text-left ">
           Length 4.572 mm
         </p>
       </div>

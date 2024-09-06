@@ -119,3 +119,9 @@ animation-fill-mode: forwards
     left: 100%;
   }
 }
+
+@media (max-width: 640px) {
+  .length_text {
+    writing-mode: unset;
+  }
+}

@@ -67,10 +67,10 @@ const Speed = () => {
   return (
     <div className="section_3 w-full h-screen relative overflow-hidden">
       <div
-        className="speed_wrap w-[90%] lg:w-[50%] h-fit flex flex-col items-start gap-[10px] absolute top-[10%] translate-y-[-10%] lg:top-[30%] lg:translate-y-[-30%] left-[15%] translate-x-[-15%] 
-      text-[1.2rem] sm:text-[32px] font-semibold ml-[2rem] lg:ml-0 text-white"
+        className="speed_wrap w-[90%] md:w-[50%] h-fit flex flex-col items-start gap-[10px] absolute top-[10%] translate-y-[-10%] lg:top-[30%] lg:translate-y-[-30%] left-[15%] translate-x-[-15%] 
+      text-[1.2rem] lg:text-[32px] font-semibold ml-[2rem] md:ml-0 text-white"
       >
-        <h2 className="speed_item text-[1.5rem] sm:text-[3rem] md:text-[72px] font-semibold font-Oswald">
+        <h2 className="speed_item text-[1.5rem] lg:text-[72px] font-semibold font-Oswald">
           Speed
         </h2>
         <div className="speed_item">0 - 100 km/h 3,2 s</div>
@@ -78,7 +78,7 @@ const Speed = () => {
         <div className="speed_item">0 - 160 km/h 6,9 s</div>
         <div className="speed_item speed_line w-[78%] lg:w-[25vw] h-[5px] rounded-[40px]"></div>
         <div className="speed_item">0 - 200 km/h 10,6 s</div>
-        <div className="speed_item speed_line w-[80vw] lg:w-[30vw] h-[5px] rounded-[40px]"></div>
+        <div className="speed_item speed_line w-[80%] lg:w-[30vw] h-[5px] rounded-[40px]"></div>
       </div>
 
       {/* Speed Top speed 296 km/h Acceleration 0 - 100 km/h 3,2 s Acceleration

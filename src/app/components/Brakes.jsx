@@ -55,9 +55,9 @@ const Brakes = () => {
   //   }
   // });
   return (
-    <div className="section_7 w-full h-screen relative flex justify-center lg:justify-end items-start">
-      <div className="brakes w-[95%] lg:w-[40%] p-[15px] lg:p-[40px] rounded-[30px] bg-main-color text-[1rem] md:text-[24px] font-medium text-black mr-0 lg:mr-[5vh] mt-[5vh] flex flex-col">
-        <h3 className="text-[1.5rem] md:text-[54px] font-semibold font-Oswald ">
+    <div className="section_7 w-full h-screen relative flex justify-center md:justify-end items-start">
+      <div className="brakes w-[95%] md:w-[40%] p-[15px] lg:p-[40px] rounded-[30px] bg-main-color text-[1rem] lg:text-[24px] font-medium text-black mr-0 lg:mr-[5vh] mt-[5vh] flex flex-col">
+        <h3 className="text-[1.5rem] lg:text-[54px] font-semibold font-Oswald ">
           Brakes
         </h3>
         <p>
